@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/main.css';
+import Header from './component/header';
+import Body from './component/body';
+import img1 from './img/img1.jpg'
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <Header />
+      <Body  title="pasta" 
+             ingredients={["spagetty","water","salt","baby nero"]}
+             instructions =" make the water hor then put some slat then spaghetti"
+             img={img1}
+      
+      
+      
+      
+      
+      />
+     
       </div>
     );
   }

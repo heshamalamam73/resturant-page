@@ -1,0 +1,74 @@
+.app {
+  margin: 0%;
+  padding: 0; }
+
+.block header {
+  position: absolute;
+  z-index: 999;
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  display: fixed;
+  grid-template-columns: repeat(2, 1fr);
+  display: flex; }
+  .block header h2 {
+    margin: auto;
+    width: 70%;
+    padding-left: 40px; }
+    .block header h2 a {
+      text-decoration: none;
+      opacity: 0.75;
+      color: #fff; }
+      .block header h2 a:hover {
+        opacity: 1; }
+  .block header nav {
+    display: inline-flex;
+    width: 30%;
+    margin: auto;
+    list-style: none; }
+    .block header nav li {
+      padding: 0 30px; }
+      .block header nav li a {
+        text-decoration: none;
+        opacity: 0.75;
+        color: #fff; }
+        .block header nav li a:hover {
+          opacity: 1; }
+
+.body {
+  position: relative;
+  background-color: #ecf0f1;
+  height: 100vh; }
+  .body .container {
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-columns: minmax(300px, auto); }
+    .body .container .grid-box {
+      background-color: black;
+      height: 600px;
+      color: #fff; }
+      .body .container .grid-box img {
+        max-width: 100%;
+        border: 2px solid black;
+        box-sizing: border-box; }
+      .body .container .grid-box .contant h1 {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: .9;
+        letter-spacing: 8px; }
+      .body .container .grid-box .contant ul {
+        display: block;
+        margin: 10px auto;
+        display: block;
+        padding: 0px 80px; }
+        .body .container .grid-box .contant ul h3 {
+          text-align: left;
+          margin: 15px -60px; }
+      .body .container .grid-box .contant p {
+        padding: 20px; }
